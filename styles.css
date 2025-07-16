@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: aqua;
+}
+
+#weatherDisplay{
+    margin-top: 25px;
+}

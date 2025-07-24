@@ -1,10 +1,54 @@
-body{
+/* Base styles */
+body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-    background-color: aqua;
+    background-color: #e0f7fa; /* softer background for readability */
+    margin: 0;
 }
 
-#weatherDisplay{
-    margin-top: 25px;
+/* Weather display card */
+#weatherDisplay {
+    margin: 25px auto 0;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive button */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0288d1;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0277bd;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #weatherDisplay {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+        padding: 14px;
+    }
 }

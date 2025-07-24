@@ -54,14 +54,36 @@
             height: 100px;
             vertical-align: middle;
         }
+        
+          /* Responsive tweaks for small screen*/
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #weatherDisplay {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
 
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>Weather App</h1>
     <input type="text" id="cityInput" placeholder="Enter a city Name"><br>
-    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="getWeather()" class="btn">Get Weather</button>
      <div id="weatherDisplay"></div>
      <script src="script.js"></script>
+     </div>
 </body>
 </html>
